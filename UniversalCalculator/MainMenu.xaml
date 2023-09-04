@@ -15,10 +15,10 @@
 			</StackPanel>
 			<StackPanel Margin="10" HorizontalAlignment="Center">
 				<TextBlock x:Name="universalCalculatorTextBlock" Text="Universal Calculator" FontSize="60px" Margin="10" FontStyle="Italic"/>
-				<Button x:Name="mathCalculatorButton" Content="Math Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20"/>
-				<Button x:Name="mortageCalculatorButton" Content="Mortgage Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20"/>
-				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20"/>
-				<Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20"/>
+				<Button x:Name="mathCalculatorButton" Content="Math Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="mathCalculatorButton_Click"/>
+				<Button x:Name="mortageCalculatorButton" Content="Mortgage Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="mortageCalculatorButton_Click"/>
+				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="currencyCalculatorButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
     </Grid>
