@@ -119,6 +119,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Currency-Converter_Page.xaml.cs">
+      <DependentUpon>Currency-Converter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Currency_Calculator_Page.xaml.cs">
+      <DependentUpon>Currency_Calculator_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -163,6 +169,14 @@
     <Page Include="Controls\NumberButtonControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Currency-Converter_Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Currency_Calculator_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainMenu.xaml">
       <SubType>Designer</SubType>
