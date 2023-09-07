@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+		<StackPanel>
+			<StackPanel >
+				<TextBlock Text="Currency Conversion Calculator" HorizontalAlignment="Center" FontSize="55" FontWeight="ExtraBold"></TextBlock>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock HorizontalAlignment="Left" Text="Dollar Amount" FontSize="50" FontWeight="Medium" Margin="60"></TextBlock>
+				<TextBlock HorizontalAlignment="Center" Text="From"  FontSize="50" FontWeight="Medium" Margin="60"></TextBlock>
+			</StackPanel>
+			<StackPanel>
+				<TextBox HorizontalAlignment="Left" TextWrapping="Wrap" PlaceholderText="" x:Name="dollarAmountTextBox" Margin="" Width="300" Padding="10" FontSize="15"></TextBox>
+			</StackPanel>
+		</StackPanel>
     </Grid>
 </Page>

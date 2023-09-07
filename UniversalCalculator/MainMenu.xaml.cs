@@ -29,12 +29,12 @@ namespace Calculator
 
 		private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(MainMenu));
+			this.Frame.Navigate(typeof(MainPage));
         }
 
 		private void mortageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(Mortgage_Calculator_Page));
+		//	this.Frame.Navigate(typeof(Mortgage_Calculator_Page));
 		}
 
 		// jack - to do: group assignment 
