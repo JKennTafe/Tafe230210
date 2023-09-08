@@ -79,8 +79,8 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			// Close the application
-			Application.Current.Exit();
+			// Return to MainMenu
+			this.Frame.Navigate(typeof(MainMenu));
 		}
 
 		private double ConvertCurrency(string fromCurrency, string toCurrency, double amount)
