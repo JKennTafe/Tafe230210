@@ -18,6 +18,8 @@
 				<Button x:Name="mathCalculatorButton" Content="Math Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="mathCalculatorButton_Click"/>
 				<Button x:Name="mortageCalculatorButton" Content="Mortgage Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="mortageCalculatorButton_Click"/>
 				<Button x:Name="currencyCalculatorButton" Content="Currency Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="currencyCalculatorButton_Click"/>
+				<TextBlock HorizontalAlignment="Center" x:Name="errorTextBlock" Text="" Foreground="Red" Visibility="Collapsed" />
+				<Button x:Name="tripCalculatorButton" Content="Trip Calculator" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="tripCalculatorButton_Click"/>
 				<Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Width="205" Margin="5" FontSize="20" Click="exitButton_Click"/>
 			</StackPanel>
 		</StackPanel>
