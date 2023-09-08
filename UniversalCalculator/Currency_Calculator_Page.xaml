@@ -10,15 +10,42 @@
 
     <Grid>
 		<StackPanel>
-			<StackPanel >
+			<StackPanel>
 				<TextBlock Text="Currency Conversion Calculator" HorizontalAlignment="Center" FontSize="55" FontWeight="ExtraBold"></TextBlock>
 			</StackPanel>
 			<StackPanel Orientation="Horizontal">
-				<TextBlock HorizontalAlignment="Left" Text="Dollar Amount" FontSize="50" FontWeight="Medium" Margin="60"></TextBlock>
-				<TextBlock HorizontalAlignment="Center" Text="From"  FontSize="50" FontWeight="Medium" Margin="60"></TextBlock>
+				<StackPanel Orientation="Vertical">
+					<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Amount$:" Margin="10" Padding="10" FontSize="30" FontWeight="Bold"/>
+					<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="From:" Margin="10" Padding="10"  FontSize="30" FontWeight="Bold" />
+					<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="To:" Margin="10" Padding="10" FontSize="30" FontWeight="Bold" />
+				</StackPanel>
+				<StackPanel>
+					<TextBox HorizontalAlignment="Left" TextWrapping="Wrap" PlaceholderText="eg: 1000" x:Name="amountValueTextBox" Text="" Margin="8" Width="330" Padding="10" FontSize="30"/>
+					<ComboBox x:Name="fromValueComboBox" Text="" Margin="8" Width="330" Padding="10" FontSize="30" SelectedIndex="0">
+						<x:String>US Dollar</x:String>
+						<x:String>Euro</x:String>
+						<x:String>British Pound</x:String>
+						<x:String>Indian Rupee</x:String>
+					</ComboBox>
+					<ComboBox x:Name="toValueComboBox" Text="" Margin="8" Width="330" Padding="10" FontSize="30" SelectedIndex="0">
+						<x:String>US Dollar</x:String>
+						<x:String>Euro</x:String>
+						<x:String>British Pound</x:String>
+						<x:String>Indian Rupee</x:String>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel>
+					<StackPanel Orientation="Vertical" Padding="10">
+						<TextBlock x:Name="entryAmount" Text="From entry goes here: " Height="50" Width="600" FontSize="20"></TextBlock>
+						<TextBlock x:Name="currencyConversion" Text="Calculation goes here" Height="50" Width="600" FontSize="30"></TextBlock>
+						<TextBlock x:Name="fromConversionDetails" Text="From > To Amount" Height="50" Width="600" FontSize="20"></TextBlock>
+						<TextBlock x:Name="toConversionDetails" Text="To > From Amount" Height="50" Width="600" FontSize="20"></TextBlock>
+					</StackPanel>
+				</StackPanel>
 			</StackPanel>
-			<StackPanel>
-				<TextBox HorizontalAlignment="Left" TextWrapping="Wrap" PlaceholderText="" x:Name="dollarAmountTextBox" Margin="" Width="300" Padding="10" FontSize="15"></TextBox>
+			<StackPanel Orientation="Horizontal">
+				<Button Content="Currency Conversion" Name="calcButton" Width="300" Margin="5" FontSize="25" Click="calcButton_Click" />
+				<Button Content="Exit" Name="exitButton" Width="100" Margin="5" FontSize="25" Click="exitButton_Click" />
 			</StackPanel>
 		</StackPanel>
     </Grid>
