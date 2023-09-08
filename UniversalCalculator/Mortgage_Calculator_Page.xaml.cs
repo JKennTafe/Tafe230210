@@ -74,6 +74,7 @@ namespace Calculator
 			mothlyRepaymentAmountTextBox.Text = monthlyRepayment.ToString();
 		}
 
+		// return to MainMenu for other calculator selection
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			this.Frame.Navigate(typeof(MainMenu));

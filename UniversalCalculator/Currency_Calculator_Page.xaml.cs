@@ -79,7 +79,7 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			// Return to MainMenu
+			// Return to MainMenu for additional selections
 			this.Frame.Navigate(typeof(MainMenu));
 		}
 
